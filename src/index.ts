@@ -49,15 +49,6 @@ export class Quicklime<Type = void> {
   }
 
   /**
-   * Checks if the Quicklime event has a callback.
-   * @param callback The callback to check.
-   * @returns True if the Quicklime event has the callback, false otherwise.
-   */
-  has(callback: QuicklimeCallback<Type>) {
-    return this.callbacks.has(callback);
-  }
-
-  /**
    * Removes a callback from the Quicklime event.
    * @param callback The callback to be removed.
    * @returns The Quicklime event.

@@ -102,14 +102,6 @@ Or go nuclear and remove all callbacks:
 myEvent.clear();
 ```
 
-### Checking for Callbacks
-
-Not sure if a callback is in the event? Just ask:
-
-```ts
-console.log(myEvent.has(myCallback));
-```
-
 ### Awaiting the Next Event
 
 There is an in-built way to create a promise that waits for the next call:
