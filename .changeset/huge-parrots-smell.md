@@ -1,5 +1,0 @@
----
-"quicklime": major
----
-
-Added Quicklime
