@@ -115,7 +115,7 @@ console.log(myEvent.has(myCallback));
 There is an in-built way to create a promise that waits for the next call:
 
 ```ts
-const event = await myEvent.promiseNext();
+const event = await myEvent.next();
 console.log(`Then I replied, "${event.data}"`);
 ```
 

@@ -80,7 +80,7 @@ export class Quicklime<Type = void> {
    * Returns a promise that resolves when the next event is fired.
    * @returns The promise.
    */
-  promiseNext() {
+  next() {
     return new Promise<QuicklimeEvent<Type>>((resolve) => {
       this.on((event) => resolve(event));
     });
