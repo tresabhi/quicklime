@@ -1,5 +1,6 @@
 {
   "name": "quicklime",
+  "private": false,
   "license": "MIT",
   "version": "1.0.0",
   "main": "dist/index.cjs",
