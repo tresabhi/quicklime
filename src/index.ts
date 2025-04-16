@@ -114,7 +114,3 @@ export class Quicklime<Type = void> {
     }
   }
 }
-
-const myEvent = new Quicklime();
-
-myEvent.on(() => console.log("on")).once(() => console.log("once"));
