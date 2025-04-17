@@ -64,6 +64,19 @@ myEvent.on((event) => {
 });
 ```
 
+By default, the last data is `null` until the first dispatch happens. If you desire, you can pass an initial value for `last` so that it is never null. Note that due to limitations on how TypeScript manages types in classes, the type of `last` will still be `Type | null` even if you pass an initial value for it:
+
+```ts
+const myEventWithoutInitial = new Quicklime<string>();
+// this'll be null
+myEventWithoutInitial.on((event) => console.log(event.last)).dispatch();
+
+// note that you don't have to pass a Type anymore since it's inferred
+const myEventWithInitial = new Quicklime("initial value");
+// this'll be "initial value"
+myEventWithInitial.on((event) => console.log(event.last)).dispatch();
+```
+
 ### Stopping Propagation
 
 ```ts

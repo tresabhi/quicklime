@@ -22,7 +22,8 @@ export type QuicklimeCallback<Type> = (event: QuicklimeEvent<Type>) => void;
  */
 export class Quicklime<Type = void> {
   public callbacks: Set<QuicklimeCallback<Type>> = new Set();
-  public last: Type | null = null;
+
+  constructor(public last: Type | null = null) {}
 
   /**
    * Adds a callback to the Quicklime event.
