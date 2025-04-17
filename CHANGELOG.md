@@ -1,5 +1,16 @@
 # quicklime
 
+## 1.2.0
+
+### Minor Changes
+
+- e19d779: Initial value for last member
+- 3a53aee: Added more info to package.json for NPM
+
+### Patch Changes
+
+- 144d88a: Rename step to changesets
+
 ## 1.1.0
 
 ### Minor Changes
